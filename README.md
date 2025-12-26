@@ -9,7 +9,7 @@ This repository contains Python APIs for interacting with and managing Azure Dev
 ## Install 
 
 ```
-pip install azure-devops
+pip install azure-devops-v6
 ```
 
 ## Get started

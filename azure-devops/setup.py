@@ -5,8 +5,8 @@
 
 from setuptools import setup, find_packages
 
-NAME = "azure-devops"
-VERSION = "6.0.0b4"
+NAME = "azure-devops-v6"
+VERSION = "6.0.0"
 
 # To install the library, run the following
 #
@@ -20,7 +20,7 @@ REQUIRES = [
 ]
 
 CLASSIFIERS = [
-    'Development Status :: 4 - Beta',
+    'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Developers',
     'Intended Audience :: System Administrators',
     'Programming Language :: Python',
@@ -31,6 +31,12 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: 3.14',
     'License :: OSI Approved :: MIT License',
 ]
 
@@ -41,12 +47,12 @@ setup(
     description="Python wrapper around the Azure DevOps 6.x APIs",
     author="Microsoft Corporation",
     author_email="vstscli@microsoft.com",
-    url="https://github.com/Microsoft/vsts-python-api",
+    url="https://github.com/Zacama/azure-devops-python-api",
     keywords=["Microsoft", "VSTS", "Team Services", "SDK", "AzureTfs", "AzureDevOps", "DevOps"],
     install_requires=REQUIRES,
     classifiers=CLASSIFIERS,
     packages=find_packages(),
     include_package_data=True,
-    long_description="""\
-    """
+    long_description="Python wrapper around the Azure DevOps 6.x APIs. For more information, visit https://github.com/Zacama/azure-devops-python-api",
+    long_description_content_type="text/plain"
 )
