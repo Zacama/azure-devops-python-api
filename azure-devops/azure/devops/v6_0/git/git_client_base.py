@@ -952,7 +952,7 @@ class GitClientBase(Client):
         :param bool include_content: Set to true to include item content when requesting json.  Default is false.
         :param bool resolve_lfs: Set to true to resolve Git LFS pointer files to return actual content from Git LFS.  Default is false.
         :param bool sanitize: Set to true to sanitize an svg file and return it as image. Useful only if requested for svg file. Default is false.
-        :rtype: object
+        :rtype: Iterator[bytes]
         """
         route_values = {}
         if project is not None:
