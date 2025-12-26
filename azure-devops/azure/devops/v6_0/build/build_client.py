@@ -503,7 +503,7 @@ class BuildClient(Client):
                               version='6.0-preview.6',
                               route_values=route_values,
                               query_parameters=query_parameters,
-                              content=content)
+                              content=content if retry is None else None)
         return self._deserialize('Build', response)
 
     def update_builds(self, builds, project):
