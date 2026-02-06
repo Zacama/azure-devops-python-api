@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See License.txt in the project root for license information.
 # --------------------------------------------------------------------------------------------
 
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 NAME = "azure-devops-v6"
 VERSION = "6.0.0"
@@ -51,7 +51,7 @@ setup(
     keywords=["Microsoft", "VSTS", "Team Services", "SDK", "AzureTfs", "AzureDevOps", "DevOps"],
     install_requires=REQUIRES,
     classifiers=CLASSIFIERS,
-    packages=find_packages(),
+    packages=find_namespace_packages(),
     include_package_data=True,
     long_description="Python wrapper around the Azure DevOps 6.x APIs. For more information, visit https://github.com/Zacama/azure-devops-python-api",
     long_description_content_type="text/plain"
